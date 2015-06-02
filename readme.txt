@@ -5,4 +5,3 @@ Git tracks changes of files.
 Git ssh test for me.
 
 Creating a new brach is quick and simple.
-This is fixed by dev branch.
