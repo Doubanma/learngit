@@ -4,4 +4,4 @@ Git has a mutable index called stage.
 Git tracks changes of files.
 Git ssh test for me.
 
-Creating a new branch is quick & simple.
+Creating a new brach is quick and simple.
