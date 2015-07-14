@@ -1,0 +1,84 @@
+"3.10pre (created: 2015/04/19 20:50:11)
+
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+cnoremap <C-l> <Del>
+highlight Bell border: none; background: #27282B;
+highlight Boolean color: #AAABAD;
+highlight CmdLine color: #CECFD1; background: #27282B;
+highlight CmdLine>* font-family: "Droid Sans"; font-size: 10pt; height: 24px;
+highlight CompDesc width: auto; color: #AAABAD;
+highlight CompItem background: #27282B;
+highlight CompItem>* height: auto; padding: 0 8px;
+highlight CompItem[selected] color: #CECFD1; background: #17181A;
+highlight CompTitle background: #27282B; font-family: "Droid Sans"; font-size: 10pt;
+highlight CompTitle>* color: #CECFD1; padding: 2px 8px;
+highlight Disabled color: #AAABAD;
+highlight Enabled color: #AAABAD;
+highlight ErrorMsg color: #F56C66; font-family: "Droid Sans"; font-size: 10pt;
+highlight Filter color: #CECFD1; background: #17181A;
+highlight FrameIndicator background: #AAABAD; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+highlight HelpNote color: #8859B3;
+highlight HelpWarning color: #B359A4;
+highlight Hint font-family: "Droid Sans"; font-size: 10pt; color: #CECFD1; background: #17181A; padding: 1px;
+highlight HintActive color: #AAABAD; background: #27282B;
+highlight HintElem background: transparent;
+highlight HintImage opacity: 0.5;
+highlight InfoMsg color: #AAABAD;
+highlight Keyword color: #AAABAD;
+highlight LineNr color: #AAABAD;
+highlight ModeMsg color: #AAABAD; background: transparent; padding: 0 8px; font-family: "Droid Sans"; font-size: 10pt;
+highlight MoreMsg color: #AAABAD; font-family: "Droid Sans"; font-size: 10pt;
+highlight NonText color: #AAABAD;
+highlight Normal color: #AAABAD; /*background: #27282B;*/ font-family: "Droid Sans"; font-size: 10pt;
+highlight PromptText color: #AAABAD; padding-top: 4px;
+highlight Question color: #AAABAD;
+highlight StatusLine color: #AAABAD; background: #27282B; font-family: "Droid Sans"; font-size: 10pt;
+highlight Title color: #CECFD1;
+highlight WarningMsg color: #AAABAD;
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-m> <Return>
+inoremap <C-h> <BS>
+inoremap <C-l> <Del>
+map ,h :echo<Space>"hello"
+nnoremap l gt
+nnoremap h gT
+nnoremap k <Up>
+nnoremap j <Down>
+nnoremap <C-m> <Return>
+nnoremap ,sq :qmarks<Return>
+nnoremap ,sb :bmarks<Return>
+nnoremap ,nf :set<Space>fullscreen<Return>
+nnoremap ,no :set<Space>nofullscreen<Return>
+nnoremap ,ec :emenu<Space>Tools.Clearly<Return>
+nnoremap ,en :emenu<Space>Tools.WebClipper<Return>
+nnoremap ,ad <A-F2>
+nnoremap ,sg :emenu<Space>Tools.S3.Google<Space>Translator.Go<Space>to<Space>the<Space>Google<Space>Translate<Space>website<Return>
+nnoremap ,fb :emenu<Space>View.Firebug<Return>
+nnoremap ,fs :emenu<Space>Tools.Greasemonkey.Scripts<Space>on<Space>Greasy<Space>Fork<Return>
+nnoremap ,mv :tabmove<Return>
+nnoremap ,ts :emenu<Space>Tools.S3.Google<Space>Translator.Translate<Space>selected<Space>text<Return>
+nnoremap ,te :emenu<Space>Tools.S3.Google<Space>Translator.Translate<Space>entered<Space>words<Return>
+set complete=sfl
+set focuscontent
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set noscrollbars
+set status=input,bookmark,history,ssl,tabcount,position
+set "titlestring=Hello Doukimi !!!"
+style! -name=about_blank about:blank <<EOF
+* { background: #333; }
+EOF
+style! -name=visual * <<EOF
+*::-moz-selection { color: Khaki; background: OliveDrab; }
+EOF
+style! -name=commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+source! /home/lyx/.vimperatorrc.local
+
+" vim: set ft=vimperator:
